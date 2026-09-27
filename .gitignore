@@ -1,0 +1,5 @@
+**/dataset/
+github_publish/
+**/artifacts/*.duckdb
+**/artifacts/*.duckdb.tmp/
+**/artifacts/*.wal

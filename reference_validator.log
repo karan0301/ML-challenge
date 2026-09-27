@@ -1,0 +1,8 @@
+ML Challenge 2026 — submission validator
+  test dir: 6ab10eb3b23ba_student_resource\student_resource\dataset\test
+  required S1 entities: 1732544
+  valid S2/S3 match IDs: 9969589
+  matching_results.tsv: 1732544 rows (107147 empty, 1625397 non-empty).
+  candidate_pairs.tsv: 1732544 rows (1 empty, 1732543 non-empty).
+
+PASS — no blocking issues found. Safe to submit.

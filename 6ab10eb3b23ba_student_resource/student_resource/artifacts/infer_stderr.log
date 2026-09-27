@@ -1,0 +1,23 @@
+Traceback (most recent call last):
+  File "D:\ML challenge\6ab10eb3b23ba_student_resource\student_resource\code\business_entity_resolution\src\main.py", line 215, in <module>
+    sys.exit(main())
+  File "D:\ML challenge\6ab10eb3b23ba_student_resource\student_resource\code\business_entity_resolution\src\main.py", line 208, in main
+    result = infer(args.data_dir, args.work_dir, args.output_dir, test_db, scores["best"]["threshold"])
+  File "D:\ML challenge\6ab10eb3b23ba_student_resource\student_resource\code\business_entity_resolution\src\main.py", line 160, in infer
+    scores = model.predict_proba(raw[MODEL_FEATURE_COLUMNS])[:, 1]
+  File "C:\Users\KARAN\AppData\Local\Programs\Python\Python310\lib\site-packages\lightgbm\sklearn.py", line 1627, in predict_proba
+    result = super().predict(
+  File "C:\Users\KARAN\AppData\Local\Programs\Python\Python310\lib\site-packages\lightgbm\sklearn.py", line 1144, in predict
+    return self._Booster.predict(  # type: ignore[union-attr]
+  File "C:\Users\KARAN\AppData\Local\Programs\Python\Python310\lib\site-packages\lightgbm\basic.py", line 4767, in predict
+    return predictor.predict(
+  File "C:\Users\KARAN\AppData\Local\Programs\Python\Python310\lib\site-packages\lightgbm\basic.py", line 1158, in predict
+    data = _data_from_pandas(
+  File "C:\Users\KARAN\AppData\Local\Programs\Python\Python310\lib\site-packages\lightgbm\basic.py", line 868, in _data_from_pandas
+    _pandas_to_numpy(data, target_dtype=target_dtype),
+  File "C:\Users\KARAN\AppData\Local\Programs\Python\Python310\lib\site-packages\lightgbm\basic.py", line 814, in _pandas_to_numpy
+    _check_for_bad_pandas_dtypes(data.dtypes)
+  File "C:\Users\KARAN\AppData\Local\Programs\Python\Python310\lib\site-packages\lightgbm\basic.py", line 805, in _check_for_bad_pandas_dtypes
+    raise ValueError(
+ValueError: pandas dtypes must be int, float or bool.
+Fields with bad pandas dtypes: target_address_missing: object
